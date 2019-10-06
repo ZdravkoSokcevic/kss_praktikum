@@ -16,18 +16,19 @@ fs.writeFile('Vjezba8.txt',
 
 var server=http.createServer((req,res)=> {
     let o=url.parse(req.url,true);
+    // console.log(o.query);
     res.writeHead(200);
     let ime=o.query.ime;
     let prezime=o.query.prezime;
     let indeks=o.query.indeks;
-    let str= indeks + ' '+ ime+' '+prezime+' '+ indeks+dat+'\n';
-    console.log(str);
+    let str= ind + ' '+ ime+' '+prezime+' '+ indeks+dat+'\n';
+    // console.log(str);
 
     if(ime==undefined || prezime==undefined || indeks==undefined) {
         res.write("Niste uspjesno upisani \n");
         readFile(res);
     }else {
-        indeks++;
+        ind++;
         res.write('Uspjesno ste upisani \n');
         readFile(res);
     }

@@ -1,0 +1,136 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'exec' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData exec
+8 silly fetchNamedPackageData exec
+9 silly mapToRegistry name exec
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/exec
+13 verbose request uri https://registry.npmjs.org/exec
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 2:27:52 AM
+16 verbose request id 7b2a6d815ea1fc96
+17 http request GET https://registry.npmjs.org/exec
+18 http 200 https://registry.npmjs.org/exec
+19 verbose headers { date: 'Sun, 06 Oct 2019 00:27:52 GMT',
+19 verbose headers   'content-type': 'application/json; charset=UTF-8',
+19 verbose headers   'transfer-encoding': 'chunked',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'set-cookie':
+19 verbose headers    [ '__cfduid=dc6053e7fcce79c23055981628d25a2201570321672; expires=Mon, 05-Oct-20 00:27:52 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+19 verbose headers   'cf-cache-status': 'HIT',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'cf-ray': '52138317a8537c8e-BEG',
+19 verbose headers   etag: 'W/"e5b6713f55f3d7422748d06e183e1b42"',
+19 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+19 verbose headers   'last-modified': 'Sun, 27 May 2018 00:05:03 GMT',
+19 verbose headers   vary: 'accept-encoding, accept',
+19 verbose headers   server: 'cloudflare',
+19 verbose headers   'content-encoding': 'gzip' }
+20 silly get cb [ 200,
+20 silly get   { date: 'Sun, 06 Oct 2019 00:27:52 GMT',
+20 silly get     'content-type': 'application/json; charset=UTF-8',
+20 silly get     'transfer-encoding': 'chunked',
+20 silly get     connection: 'keep-alive',
+20 silly get     'set-cookie':
+20 silly get      [ '__cfduid=dc6053e7fcce79c23055981628d25a2201570321672; expires=Mon, 05-Oct-20 00:27:52 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+20 silly get     'cf-cache-status': 'HIT',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'cf-ray': '52138317a8537c8e-BEG',
+20 silly get     etag: 'W/"e5b6713f55f3d7422748d06e183e1b42"',
+20 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 silly get     'last-modified': 'Sun, 27 May 2018 00:05:03 GMT',
+20 silly get     vary: 'accept-encoding, accept',
+20 silly get     server: 'cloudflare',
+20 silly get     'content-encoding': 'gzip' } ]
+21 verbose get saving exec to /home/miral/.npm/registry.npmjs.org/exec/.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule exec@0.2.1 checking installable status
+35 silly cache add args [ 'exec', null ]
+36 verbose cache add spec exec
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'exec',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'exec',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed exec@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for exec
+40 info addNameTag [ 'exec', 'latest' ]
+41 silly mapToRegistry name exec
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/exec
+45 verbose addNameTag registry:https://registry.npmjs.org/exec not in flight; fetching
+46 verbose get https://registry.npmjs.org/exec not expired, no request
+47 silly addNameTag next cb for exec with tag latest
+48 silly addNamed exec@0.2.1
+49 verbose addNamed "0.2.1" is a plain semver version for exec
+50 warn deprecated exec@0.2.1: deprecated in favor of builtin child_process.execFile
+51 silly mapToRegistry name exec
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry uri https://registry.npmjs.org/exec
+55 verbose addRemoteTarball https://registry.npmjs.org/exec/-/exec-0.2.1.tgz not in flight; adding
+56 verbose addRemoteTarball [ 'https://registry.npmjs.org/exec/-/exec-0.2.1.tgz',
+56 verbose addRemoteTarball   '2661f0bfc5532918629117cb9f80c7564af2c51f' ]
+57 info retry fetch attempt 1 at 2:27:53 AM
+58 info attempt registry request try #1 at 2:27:53 AM
+59 http fetch GET https://registry.npmjs.org/exec/-/exec-0.2.1.tgz
+60 http fetch 200 https://registry.npmjs.org/exec/-/exec-0.2.1.tgz
+61 silly fetchAndShaCheck shasum 2661f0bfc5532918629117cb9f80c7564af2c51f
+62 verbose addTmpTarball /tmp/npm-20809-df79df45/registry.npmjs.org/exec/-/exec-0.2.1.tgz not in flight; adding
+63 verbose addTmpTarball already have metadata; skipping unpack for exec@0.2.1
+64 silly cache afterAdd exec@0.2.1
+65 verbose afterAdd /home/miral/.npm/exec/0.2.1/package/package.json not in flight; writing
+66 verbose afterAdd /home/miral/.npm/exec/0.2.1/package/package.json written
+67 silly loadAllDepsIntoIdealTree Finishing
+68 silly idealTree:prePrune lib
+68 silly idealTree:prePrune └── exec@0.2.1
+69 silly loadIdealTree Finishing
+70 silly currentTree lib
+71 silly idealTree lib
+71 silly idealTree └── exec@0.2.1
+72 silly generateActionsToTake Starting
+73 silly install generateActionsToTake
+74 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+75 silly rollbackFailedOptional Starting
+76 silly rollbackFailedOptional Finishing
+77 silly runTopLevelLifecycles Starting
+78 silly runTopLevelLifecycles Finishing
+79 silly install printInstalled
+80 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+81 verbose cwd /home/miral/Documents/skola/III_GODINA/kss_praktikum
+82 error Linux 5.0.0-29-generic
+83 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "exec"
+84 error node v8.10.0
+85 error npm  v3.5.2
+86 error path /usr/local/lib/node_modules
+87 error code EACCES
+88 error errno -13
+89 error syscall access
+90 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+90 error  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+90 error   errno: -13,
+90 error   code: 'EACCES',
+90 error   syscall: 'access',
+90 error   path: '/usr/local/lib/node_modules' }
+91 error Please try running this command again as root/Administrator.
+92 verbose exit [ -13, true ]

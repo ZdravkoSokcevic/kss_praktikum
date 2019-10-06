@@ -1,0 +1,25 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    table{
+        background-color: #992211;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        .heading {
+            position: relative;
+            height: 50px;
+            background-color: #800000;
+            color: #ff9;
+            td {
+                position: relative;
+                height: 40px;
+                background-color: #f00000;
+            } 
+        }
+       
+    }
+}

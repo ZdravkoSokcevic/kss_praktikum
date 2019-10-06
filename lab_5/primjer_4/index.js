@@ -1,8 +1,8 @@
-// Pozovit aplikaciju iz primjera 3 koja se nalazi na serveru (pitati asistenta za ip adresu i port)
-// ●  Provjerite da li se nalazite na listi upisanih studenata. Ako vas nema na listi dodajte se u listu
-// ● Tako sto cete proslijetiti odgovarajuci URL web citacu (ipadresa:port?ime=Zdravko&prezime=sokcevic)
-// ● Ispravite kod u prethodnoj aplikaciji tako da se fajl brise svaki put kada se izvrsi upis  u fajl
-// ● Ispravite kod tako da se fajl brise svaki put kada se pokrene aplikacija
+var server=http.createServer((req,res)=> {
+    let o=url.parse(req.url,true);
+    // console.log(o.query);
+    res.writeHead(200);
+    
 
 // http://http://localhost:8080/?ime=zdravko&prezime=sokcevic&indeks=rer16_17
 
@@ -29,13 +29,15 @@ var server=http.createServer((req,res)=> {
     let o=url.parse(req.url,true);
     // console.log(o.query);
     res.writeHead(200);
-    let ime=o.query.ime;
-    let prezime=o.query.prezime;
-    let indeks=o.query.indeks;
-    let str= ind + ' '+ ime+' '+prezime+' '+ indeks+dat+'\n';
+    let osoba={
+        ime:o.query.ime,
+        prezime:o.query.prezime,
+        indeks:o.query.indeks
+    }
+    let str= ind + ' '+ osoba.ime+' '+osoba.prezime+' '+ osoba.indeks+dat+'\n';
     // console.log(str);
 
-    if(ime==undefined || prezime==undefined || indeks==undefined) {
+    if(osoba.ime==undefined || osoba.prezime==undefined || osoba.indeks==undefined) {
         res.write("Niste uspjesno upisani \n");
         readFile(res);
     }else {
@@ -49,6 +51,7 @@ var server=http.createServer((req,res)=> {
                         console.log(err);
                     /// Fajl se brise svaki put kada se upise u njega
                     //childProcess.exec('rm -r Vjezba8.txt');
+                    res.write(JSON.stringify(osoba));
                     readFile(res);
                })
                     // readFile(res);

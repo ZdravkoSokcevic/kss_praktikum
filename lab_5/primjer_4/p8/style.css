@@ -1,0 +1,28 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body table {
+  background-color: #992211;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+body table .heading {
+  position: relative;
+  height: 50px;
+  background-color: #800000;
+  color: #ff9;
+}
+
+body table .heading td {
+  position: relative;
+  height: 40px;
+  background-color: #f00000;
+}
+/*# sourceMappingURL=style.css.map */
