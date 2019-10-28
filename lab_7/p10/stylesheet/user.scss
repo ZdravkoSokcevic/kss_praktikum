@@ -1,0 +1,29 @@
+body {
+    margin-left: 50px;
+    display:flex;
+    flex-direction: row;
+    margin-top:100px;
+    h1 {
+        color:red;
+    }
+    .rowData{
+        width: 70%;
+        form.user-form {
+            display:flex;
+            flex-wrap: wrap;
+            width:50%;
+            input {
+                width: 50%;
+                :placeholder-shown {
+                    color:blue;
+                }
+            }
+            input:focus {
+                border-color:blue;
+            }
+        }
+    }
+    .tableData{
+
+    }
+}

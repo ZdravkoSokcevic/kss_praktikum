@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Uesrname</th>
+        <th>Email</th>
+        <th>Delete?</th>
+    </tr>
+    <% for(let x=0;x<data.length;x++) { %>
+        <tr>
+            <td><%= data[x].username %></td>
+            <td><%= data[x].email%></td>
+            <td><a href="/">delete</a></td>
+        </tr>
+    <% }%>
+</table>

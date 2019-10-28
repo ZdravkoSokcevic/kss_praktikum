@@ -1,0 +1,20 @@
+
+<ul type="none">
+        Citati:
+        <br>
+        <br>
+        <br>
+<% for(let x=0;x< data.all.length;x++) { %>
+    <li>
+        <ul>
+            <li>Author: <%= data.all[x].author %></li>
+            <li>Quote: <%= data.all[x].quote %></li>
+            <br>
+            <br>
+        </ul>
+    </li>
+<% } %>
+</ul>
+
+Odabran: 
+<b><%= data.current.quote %></b>

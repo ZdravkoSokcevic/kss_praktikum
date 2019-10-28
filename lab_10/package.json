@@ -1,0 +1,6 @@
+ {
+     "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "start":"start index.js"
+  }
+}

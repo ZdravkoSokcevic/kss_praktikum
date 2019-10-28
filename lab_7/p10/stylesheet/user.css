@@ -1,0 +1,41 @@
+body {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+}
+
+body h1 {
+  color: red;
+}
+
+body .rowData {
+  width: 70%;
+}
+
+body .rowData form.user-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
+body .rowData form.user-form input {
+  width: 50%;
+}
+
+body .rowData form.user-form input :placeholder-shown {
+  color: blue;
+}
+
+body .rowData form.user-form input:focus {
+  border-color: blue;
+}
+/*# sourceMappingURL=user.css.map */

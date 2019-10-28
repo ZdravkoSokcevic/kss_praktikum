@@ -1,0 +1,47 @@
+doctype html
+html
+    title= ('Primjer 6')
+    link(rel='stylesheet',href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
+    link(rel="stylesheet", href="/stylesheet/user.css")
+body
+    .rowData
+        h1.add-user__title Add User
+        form.user-form.col-6.row
+            input.col-6(type="text" placeholder='username')
+            input.col-6(type="text" placeholder='email')
+            input.col-6(type="text" placeholder='Full Name')
+            input.col-6(type="text" placeholder='Age')
+            input.col-6(type="text" placeholder='Location')
+            input.col-6(type="text" placeholder='gender')
+            input(type="submit" value='Add user')
+    .tableData
+        h1 User List
+        table.user-show
+            tr.header
+                th UserName
+                th Email
+                th Delete
+            tr.data
+                td
+                    a(href='/') a
+                td
+                    p a
+                td
+                    a(href="/") Delete
+            tr.data
+                td
+                    a(href='/') |
+                td
+                    p |
+                td
+                    a(href="/") Delete
+            tr
+                td
+                    a(href='/') 9
+                td
+                    p 9 
+                td
+                    a(href="/") Delete
+
+    script(src='/scripts/jquery-3.4.1.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')

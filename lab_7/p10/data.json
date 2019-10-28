@@ -1,0 +1,43 @@
+[
+    {
+        "username":"sokac123",
+        "email":"sokac123@mail.com",
+        "fullname":"Zdravko Sokcevic",
+        "age":24,
+        "location":"Nis,Serbia",
+        "gender":"male",
+        "_id":0
+    },{
+        "username":"peraperic",
+        "email":"peraperic@mail.com",
+        "fullname":"pera peric",
+        "age":28,
+        "location":"Belgrade,Serbia",
+        "gender":"male",
+        "_id":1
+    },{
+        "username":"jankojankovic1",
+        "email":"jankojankovic1@mail.com",
+        "fullname":"janko jankovic",
+        "age":30,
+        "location":"Vranje,Serbia",
+        "gender":"male",
+        "_id":2
+    },{
+        "username":"stankostankovic123",
+        "email":"stanko.stankovic123",
+        "fullname":"stanko stankovic",
+        "age":36,
+        "location":"Knjazevac, Serbia",
+        "gender":"male",
+        "_id":3
+    },{
+        "username":"drazen.milicevic114",
+        "email":"drazen.milicevic@mail.com",
+        "fullname":"drazen milicevic",
+        "age":40,
+        "location":"Novi Sad, Serbia",
+        "gender":"male",
+        "_id":4
+    }
+]
