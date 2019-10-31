@@ -13,7 +13,7 @@ var server=net.createServer(conn=> {
 
     conn.on('close',()=> {
         count--;
-    });z
+    });
     conn.on('data',data=>{
         console.log(data.toString());
         conn.write('Konektovan');
