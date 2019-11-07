@@ -25,10 +25,11 @@ var server=http.createServer((req,res)=> {
     // console.log(o);
     let path=o.path.split('/');
     // console.log(o.query.prototype.hasOwnProperty('students'));
+   
     switch(path[1])
     {
         // here we are shure that url contains student key
-        case 'students': 
+        case '?students': 
         {
             console.log("tu je");
             // res.end("Postoji");
@@ -41,7 +42,7 @@ var server=http.createServer((req,res)=> {
                });
             });
         };break;
-        case '?ime':
+        default:
         {
             console.log("ovdje je");
             writeStudentIfNotExists(req).then(result=> {
@@ -50,9 +51,6 @@ var server=http.createServer((req,res)=> {
             });
             // console.log("A sad je ovdje");
         };break;
-        default: {
-            // console.log(path[1]);
-        }
     }
     // console.log(o.query.prototype.hasOwnProperty('students'));
     // res.end("dobro je");
